@@ -8,7 +8,7 @@
 
 <body style="margin:0; padding:0; background-color:#F2F2F2;">
 
-<p>Welcome to the Test UK Flavel Support Site </p>
+<p>Welcome to the Production UK ZENIT Support Site </p>
 
 <!-- This is where the embedded chat is triggered -->
 <table border="1">
@@ -17,7 +17,7 @@
 </tr>
 </table>
 
-<p>Web site content will be inserted here...</p		
+<p>Web site content will be inserted here...</p>
 
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
@@ -57,8 +57,8 @@
 
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
-	    		
-		/* Start - Prechat Configuration for Blomberg UK */
+ 		
+		/* Start - Prechat Configuration for ZENIT UK */
 		 
 		
 		embedded_svc.settings.extraPrechatFormDetails = [{
@@ -82,6 +82,11 @@
 			"label":"Country Code", 
 			"value": "44",
 			"transcriptFields": ["ARC_Country_Code__c"],
+			"displayToAgent": false
+		}, {
+			"label":"Brand", 
+			"value": "ZENITH",
+			"transcriptFields": ["ARC_Brand__c"],
 			"displayToAgent": false
 		}]; 
 		
@@ -146,20 +151,20 @@
 			}
 		});
 		
-		/* End - Prechat Configuration for Flavel UK */
+		/* End - Prechat Configuration for ZENIT UK */ 												  
 
 		embedded_svc.init(
 			'https://argrp--test.sandbox.my.salesforce.com',
-			'https://argrp--test.sandbox.my.salesforce-sites.com/chatukflavel',
+			'https://argrp--test.sandbox.my.salesforce-sites.com/chatukzenith',
 			gslbBaseURL,
 			'00D0E00000022q8',
-			'UK_Embedded_Chat_Deployment_Flavel',
+			'UK_Embedded_Chat_Deployment_Zenith',
 			{
 				baseLiveAgentContentURL: 'https://c.la2s-core1.sfdc-cehfhs.salesforceliveagent.com/content',
-				deploymentId: '572QI0000031imr',
-				buttonId: '573QI000000TJaL',
+				deploymentId: '572QI0000031jUP',
+				buttonId: '573QI000000TJs5',
 				baseLiveAgentURL: 'https://d.la2s-core1.sfdc-cehfhs.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04IQI00000077Cr2AI_18ead8d1ab8',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04IQI00000077Cs2AI_18eadb32eca',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -191,17 +196,3 @@ function bootstrapChat() {
 </body>
 
 </html>
-
-
-													 
-
-						  
-										  
- 
-
-		 
-
-
-	   
-
-	   
